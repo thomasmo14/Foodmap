@@ -10,9 +10,15 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
 </head>
 <body>
     <div id="app">
@@ -20,14 +26,15 @@
             <h3>Food Map</h3>
             <nav>
                 <ul class="square">
-                  <li><a href="">Bejelentkezés</a></li>
-                  <li><a href="">Regisztráció</a></li>
-                  <li><a href="">Regisztráció Tulajdonosként</a></li>
+                    <li><a class="active" href="">Főoldal</a></li>
+                    <li><a href="">Bejelentkezés</a></li>
+                    <li><a href="">Regisztráció</a></li>
+                    <li><a href="">Regisztráció Tulajdonosként</a></li>
                 </ul>
             </nav>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=szeged&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps wordpress</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
             <router-view></router-view>
         </main>
     </div>
+    <div id="map"></div>
 </body>
 </html>
