@@ -24,10 +24,9 @@
 <body>
     <div id="app">
         <main class="py-3">
-            <h3>Food Map</h3>
             <nav>
                 <ul class="square">
-                    <li><a class="active" href="">Főoldal</a></li>
+                    <li><a class="active" href="">Food Map</a></li>
                     <!--
                     <li><a href="login.blade.php">Bejelentkezés</a></li>
                     <li><a href="">Regisztráció</a></li>
