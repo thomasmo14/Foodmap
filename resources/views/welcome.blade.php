@@ -29,6 +29,7 @@
                     <li><a class="active" href="">Food Map</a></li>
                     <!--
                     <li><a href="login.blade.php">Bejelentkezés</a></li>
+                    
                     <li><a href="">Regisztráció</a></li>
                     <li><a href="">Regisztráció Tulajdonosként</a></li>
                     -->
