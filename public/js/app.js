@@ -9,7 +9,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'sk.eyJ1IjoidGhvbWFzbW8xNCIsImEiOiJja3o1bWs3ZzAwbmZmMnBxZnFyMXJidDNjIn0.VhrFSe0T5QKnYTcx5cl-cw'
 }).addTo(map);
 
-var marker = L.marker([46.252316,  20.146179]).addTo(map);
+var marker = L.marker([46.261787,  20.149956]).addTo(map);
 
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
