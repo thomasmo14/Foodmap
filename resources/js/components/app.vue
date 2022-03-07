@@ -1,14 +1,10 @@
 <template>
-    <div>
-        {{message}}
-    </div>
+    <h3>Hello</h3>
 </template>
 <script>
-export default {
-    data() {
-        return {
-            message: 'Hello World'
+export default ({
+    mounted() {
+            console.log('Component mounted.')
         }
-    }
-};
+})
 </script>
