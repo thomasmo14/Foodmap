@@ -1,15 +1,15 @@
 require('./bootstrap');
-require('../sass/app.scss')
-import Vue from 'vue'
 
-window.Vue = require('vue');
+window.Vue = require('vue').default;
 
-// router
-import router from './routes.js';
-window.router = router;
-window.Fire = new Vue();
+import App from './App.vue'
+import VueRouter from 'vue-router';
+import routes from './routes';
+
+Vue.use(VueRouter);
 
 const app = new Vue({
     el: '#app',
-    router,
-}).$mount('#app');
+    router: new VueRouter(routes),
+    render: h=> h(App)
+});

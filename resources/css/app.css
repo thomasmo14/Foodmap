@@ -1,24 +1,27 @@
-.square{
-    counter-reset: list-counter;
-    list-style: none;
-    float:left;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-.square li{
-    margin: 1.5em 0;    
+
+li {
+    float: left;
 }
-.square li:before{
-    content: counter(list-counter);
-    counter-increment: list-counter;
-    width: 1em;
-    height: 1em;
-    padding: .5em;
-    margin-right: 1em;
-    border: .25em solid #ccc;
-    background: #000;
-    color: #fff;
-    font-family: arial;
-    font-weight: bold;
+
+li a {
+    display: block;
+    color: white;
     text-align: center;
-    display: inline-block;
-    
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #04AA6D;
+}
+
+.active {
+    background-color: #04AA6D;
 }
